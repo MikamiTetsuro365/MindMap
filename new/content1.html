@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>あなたの学びが変わる！マインドマップ活用法</title>
+<meta name="keywords" content="マインドマップ,勉強法" />
+<meta name="description" content="本サイトはマインドマップの作成講座です。基本的なマインドマップの描き方から、会議などの集団でアイデアを出しあうときなどの応用的なマインドマップの作り方、そして、作成後の活用方法まで例を交えて解説しています。" />
+<link href="css/newnew.css" rel="stylesheet" type="text/css" />
+<!--iquery -->
+<script src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    //body非表示
+    $("body").css("display", "none");
+    //フェードイン表示
+    $("body").fadeIn(1500);
+    //ページ移動処理
+    $("a.fade").click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1500, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+
+
+<!-- アニメーション関連-->
+
+//マウスを乗っけた時にぼんやりと半透明に
+$(function(){
+		   $(".title2,.menu").hover(function(){
+					$(this).stop(true).fadeTo("fast",0.4);},function(){$(this).fadeTo("fast",1,0);				
+										});
+		   });
+
+
+
+$(function(){
+		   $(".bottonn").hover(function(){$(this).stop(true).animate({width:80,height:80,top:10});},function(){$(this).animate({width:100,height:100,top:0});});
+		   });
+
+
+</script>
+
+</head>
+
+<body>
+<div id="null"></div>
+<div id="sotoBotton"><a href="index.html"><img src="img/botton.png" width="100px" height="100px" class="bottonn"></a><a href="content2.html"><img src="img/botton2.png" width="100px" height="100px" class="bottonn"></a></div>
+<div id="maincontainer2">
+<div id="maincontentstitle">マインドマップとは？</div>
+<div id="contents">
+
+
+<p>単純に言うと、ある事柄について、自分の考えやアイデアなどをまとめたり、書き残したいときに便利な方法のことです。</p>
+<p>私達の脳は放射思考という、ある事柄と別の事柄を関連付け、放射状に思考を発展させる、素晴らしい能力を有しています。これにより、複雑な事柄でも視覚的に表現することができ、非常に簡単に理解することができるようになります。 </p>
+<p>マインドマップは脳の中で行われている放射思考をだれでも簡単に目に見える形で表現できるツールなのです!!</p>
+<p>マインドマップを利用すれば、受験勉強や予習復習、意思決定、問題解決をする時の記憶や理解の手助けになるのです! </p>
+<p>&nbsp;</p>
+<div align="center"><img src="img/fadfaf.jpg"></div>
+</div>
+
+<div id="hed2">Copyright (C) <script language="javascript">document.write(new Date().getFullYear())</script>
+  あなたの学びが変わる！マインドマップ活用法. All Rights Reserved.</div> 
+</div>
+
+
+</body>
+</html>

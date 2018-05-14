@@ -1,0 +1,750 @@
+@charset "utf-8";
+/*全体的な設定*/
+
+body{
+	color:#330000;/*通常のテキストカラー*/
+	}
+a{
+	color:#006699;/*通常のリンクテキストカラー*/
+	}
+a:hover{
+	color:#330000;/*マウスが乗った時の通常のリンクテキストカラー*/
+	text-decoration:underline;
+	}
+	
+
+
+
+
+*{ margin:0; padding:0;}
+img{ border:0;}
+
+
+*{ margin:0; padding:0;}
+img{ border:0;}
+
+table,div{
+	margin:auto;
+	}
+
+body {
+    font-size: 13px;
+    *font-size: small; 
+    *font: x-small;
+	font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+p,th,td,li{
+	font-size:15px;
+	*font-size:90%;
+	*font:80%;
+	text-indent: 1em;
+	line-height: 1.6em;
+	padding: 0px 20px  0px 20px ;
+	}
+
+body{
+	text-align:center;
+	background-color: #333333;
+	}
+
+.CNT{ text-align:center;}
+.L{ text-align:left;}
+.R{ text-align:right;}
+
+/*メインページ用設定*/
+
+
+#maincontainer{
+width:810px;
+height:709px;
+text-align:left;
+background-color: white;
+margin:auto;
+
+}
+
+#mainnakacontainer{
+width:810px;
+height:480px;
+background-color: white;
+}
+
+#leftcontainer
+{
+width:404px;
+height:602px;
+float:left;	
+}
+
+.introduction2{
+	width:196.5px;
+	height:30px;
+	background-color:Black;
+	opacity: 0.5;
+
+	}
+	
+	
+
+.menu{
+	
+	letter-spacing:1px;
+	font-size:20px;
+	color:white;
+	text-decoration:none;
+	font-size:35px;
+	font:"メイリオ", Meiryo, Osaka;
+	background-image:url(../new/botan.jpg);
+	width:270px;
+	height:60px;
+	display:block;
+	line-height:60px;
+	text-align:center;
+	float:left;
+	}
+
+
+.hed{
+	width:810px;
+	height:20px;
+	background-color:black;
+	text-align:right;
+	float:left;
+	color:white;
+	}
+.hed2{
+	width:810px;
+	height:20px;
+	background-color:black;
+	text-align:left;
+	float:left;
+	color:white;
+	}
+.hed2 a { color: white; } 
+.hed2 a:hover{
+	color:white;/*マウスが乗った時の通常のリンクテキストカラー*/
+	text-decoration:underline;
+	}
+
+#title{
+	width:404px;
+	height:405px;
+	background-color:Lime;
+	float:left;
+	line-height:403px;
+	text-align:center;
+	font-size:50px;
+	font:"メイリオ", Meiryo, Osaka;
+	
+	}
+#title2box{
+	width:406px;
+	height:609px;
+	float:left;	
+	}	
+	
+.title2{
+	width:203px;
+	height:203px;
+	background-color:Lime;
+	float:left;
+	line-height:198px;
+	text-align:center;
+	font-size:25px;
+	font:"メイリオ", Meiryo, Osaka;
+	
+  
+	}
+
+.title3{
+	width:203px;
+	height:203px;
+	background:url(../new/javaon.jpg);
+	float:left;
+	line-height:198px;
+	text-align:center;
+	font-size:25px;
+	font:"メイリオ", Meiryo, Osaka;
+	
+  
+	}
+.title4{
+	width:203px;
+	height:203px;
+	background:url(../new/javaonen.png);
+	float:left;
+	line-height:198px;
+	text-align:center;
+	font-size:25px;
+	font:"メイリオ", Meiryo, Osaka;
+	
+  
+	}	
+
+	
+#kousin{
+	width:404px;
+	height:205px;
+	background-color:#7a7b7d;
+	float:left;
+	line-height:195.5px;
+	text-align:center;
+	font-size:50px;
+	font:"メイリオ", Meiryo, Osaka;
+	border-color: white;
+	display:block;
+	
+	
+}
+#kousintitle{
+	width:404px;
+	height:58px;
+	background-color:#FA6800;
+	float:left;
+	line-height:40px;
+	text-align:center;
+	font-size:30px;
+	font:"メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+	display:block;
+	
+ 
+	color:white;
+}
+#kousinconte{
+	width:404px;
+	height:147px;
+	background-color:white;
+	float:left;
+	line-height:10px;
+	text-align:center;
+	font-size:10px;
+	font:"メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	
+	display:block;
+	overflow-y:scroll; 
+	color:white;
+}
+#kousincontener{
+	width:395px;
+	background-color:white;
+	float:left;
+	line-height:40px;
+	text-align:left;
+	font-size:10px;
+	
+	font:"メイリオ", Meiryo,  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	display:block;
+	color:black;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+
+
+/*空白*/
+#null{
+	
+	height:20px;
+	
+	}
+
+
+/*文字に関する設定いい*/
+h1{
+	
+	font-size:25px;
+	color:#333333;
+	font-weight:normal;
+	text-indent:10px;
+	
+	}
+h2{
+	margin:10px 0 0 0px;
+	font-weight:normal;
+	font-size:25px;
+	}
+h2 a{
+	font-size:25px;
+	line-height:30px;
+	vertical-align:top;
+	text-decoration:none;
+	color:#333333;
+	}
+h2 a:hover{
+	text-decoration:none;
+	color:#333333;}
+h4{ font-size:15px;
+	margin:10px 16px 0 0px;
+	font-weight:normal;
+	color:#0099cc;
+	border-bottom:1px dotted #cccccc;
+	padding:0px 0px 5px 5px;
+	}
+
+/*コンテンツページ*/
+
+#maincontainer2{
+width:810px;
+
+text-align:left;
+background-color: white;
+margin:auto;
+
+}
+#maincontentstitle{
+	width:834px;
+	height:45px;
+	text-align:center;
+	background-color:#FC6;
+	line-height:45px;
+	text-align:center;
+	font-size:25px;
+	color:#000;
+	}	
+
+
+#contents{
+	width:810px;
+	background-color:white;
+	border:2px dotted;
+	text-align:left;
+	padding:10px;
+	line-height: 1.5em;
+	}		 
+	
+#contents h2{
+	
+	font-weight:normal;
+	font-size:20px;	
+	border-left:20px solid #FC3;
+	background-color:#ededed;
+	color:#000;
+	padding-left:10px;
+	margin: 10px 0px 10px 0px;
+	line-height: 1.5em;
+		
+	}
+#contents li{
+	
+	
+	line-height: 2em;
+		
+	}
+
+#hed2{
+	width:834px;
+	height:20px;
+	background-color:black;
+	text-align:right;
+	float:left;
+	color:white;
+
+	}
+
+/*スクロールバー関連*/
+.jspContainer
+{
+	
+	overflow:hidden;
+	position: relative;
+}
+
+.jspPane
+{	
+	
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 18px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #dde;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #bbd;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+
+
+
+/*ボタン関連*/
+#sotoBotton{
+	
+	
+	width: 100px;
+    height: 410px;
+	
+    position:fixed;left:50%;margin-left:-520px
+	}	
+	
+	
+
+.botton{
+	width: 100px;
+    height: 100px;
+	 position:fixed;left:50%;margin-left:-500px
+	}	
+	
+/*吹き出し関連*/	
+.box{
+	
+	width: 738px;
+	height: 168px;
+	margin-top:20px;
+	}
+.Abox{
+	height: 100px;
+	width: 100px;
+	float:left;
+	}
+.Bbox
+{
+	
+	width: 600px;
+	float:left;
+	background: #ffffff;
+	border: 4px solid #c2e1f5;
+	padding:5px;
+	}
+
+
+/*パンくずとか*/
+#pantitle{
+	width:834px;
+	height:20px;
+	text-align:center;
+	background-color:black;
+	color:black;
+	list-style:none;
+	
+	}
+#pantitle a{
+	color:white;/*通常のリンクテキストカラー*/
+	float:left;
+	}
+#pantitle a:hover{
+	color:white;/*マウスが乗った時の通常のリンクテキストカラー*/
+	text-decoration:underline;
+	}
+	
+
+	
+.panname{
+	width:;
+	height:20px;
+	text-align:center;
+	vertical-align:middle;
+	background-color:black;
+	color:white;
+	list-style:none;
+	float:left;
+
+	}
+#pannull{
+	width:10px;
+	height:20px;
+	text-align:center;
+	
+	background-color:black;
+	color:white;
+	list-style:none;
+	float:left;
+
+	}		
+.pan
+{
+	width:0px;
+	height:0;
+	borderground:#909;
+	border-style:solid;
+	border-width:10px;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:white;
+	float:left;
+}
+.pan2
+{
+	width:0px;
+	height:0;
+	borderground:black;
+	border-style:solid;
+	border-width:10px;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:white;
+	float:right;
+}
+.pan3
+{
+	width:0px;
+	height:0;
+	border-style:solid;
+	borderground:black;
+	border-width:10px;
+	border-top-color:white;
+	border-right-color:white;
+	border-bottom-color:white;
+	border-left-color:transparent;
+	float:right;
+	
+	
+	
+}
+
+.panbox
+{
+	width:50px;
+	height:20px;
+	float:left;
+	
+	}
+.panbox2
+{
+	width:13px;
+	height:10px;
+	margin:left;
+	
+	}	
+/*
+#pantitle li
+{
+float:left;
+line-height:1;
+}
+#pantitle a
+{
+	padding-left:1.5em;
+	border-radius:5px 0 0 5px;
+}
+*/
+/*
+#pantitle a:after{
+	
+	}
+#pantitle a:before{
+	content:"";
+	position;absolute:
+	top:50%;
+	margin-top:-1.5em;
+	border-top:1.5em solid transparent;
+	border-bottom:1.5em solid transparent;
+	border-left:1.5em solid;
+	right:-1.5em;
+	
+	}
+
+#pantitle a:after{
+	border-left-color:#AAAFB5;
+	z-index:3;
+	}
+#pantitle a:before{
+	border-left-color:#333;
+	right:-1.6em;
+	z-index:2;
+	}	
+#pantitle strong
+{
+	padding:.7em 1em .7em 2.5em;
+	color:#FFF;
+	display:block;
+	}
+	
+	*/
+	
+
+
+dl{
+	width:810px;
+	margin:10px auto;
+}
+dt{
+	line-height:35px;
+	text-indent:3em;
+	font-size:large;
+	font-weight:bold;
+	color:white;
+	height:35px;
+	background:url(../img/tai2.jpg);
+	
+}
+dt.over{
+	background:url(../img/tai1.jpg);
+	cursor:pointer;
+}
+dt.selected{
+	background:url(../img/tai1.jpg);
+	cursor:default;
+	color:black;
+}
+dd{
+	
+	background:white;
+	
+}
+dd p{
+	
+}
+
+/*吹き出し改良*/
+/*吹き出し関連*/	
+.bbox{
+	
+	width: 780px;
+		margin-top:20px;
+		
+	
+	}
+.AAbox{
+	height: 100px;
+	width: 100px;
+	float:left;
+	}
+.BBbox
+{
+	
+	width: 600px;
+	float:left;
+	background: #ffffff;
+	border: 4px solid #c2e1f5;
+	padding:5px;
+	background-color:#c2e1f5;
+	margin-bottom:20px;
+	}
+.trianglebox
+{
+	width:30px;
+	height:60px;
+	float:left;
+	}
+
+.trianglespace
+{
+	width:30px;
+	height:20px;
+	}
+
+.triangle
+{
+	border:30px solid transparent;
+	
+	border-right-color: #c2e1f5;
+	border-left-width:0;
+	width:0;
+	
+	
+	}	
+	
+.space
+{
+	width:20px;
+	height:20px;
+	}
+	
+
+#kokuban
+{
+	width:700px;
+	background-color:#330;
+	color:#FFF;
+	padding:10px;
+	font-size:large;
+	
+	}

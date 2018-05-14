@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>あなたの学びが変わる！マインドマップ活用法</title>
+<meta name="keywords" content="マインドマップ,勉強法" />
+<meta name="description" content="本サイトはマインドマップの作成講座です。基本的なマインドマップの描き方から、会議などの集団でアイデアを出しあうときなどの応用的なマインドマップの作り方、そして、作成後の活用方法まで例を交えて解説しています。" />
+<link href="css/newnew.css" rel="stylesheet" type="text/css" />
+<!--iquery -->
+<script src="js/jquery-1.9.1.js"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    //body非表示
+    $("body").css("display", "none");
+    //フェードイン表示
+    $("body").fadeIn(1500);
+    //ページ移動処理
+    $("a.fade").click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1500, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+
+
+<!-- アニメーション関連-->
+
+//マウスを乗っけた時にぼんやりと半透明に
+$(function(){
+		   $(".title2,.menu").hover(function(){
+					$(this).stop(true).fadeTo("fast",0.4);},function(){$(this).fadeTo("fast",1,0);				
+										});
+		   });
+
+
+$(function(){
+		   $(".bottonn").hover(function(){$(this).stop(true).animate({width:80,height:80,top:10});},function(){$(this).animate({width:100,height:100,top:0});});
+		   });
+
+
+
+</script>
+
+</head>
+
+<body>
+<div id="null"></div>
+<div id="sotoBotton"><a href="index.html"><img src="img/botton.png" width="100px" height="100px" class="bottonn"></a><a href="content4.html"><img src="img/botton2.png" width="100px" height="100px" class="bottonn"></a><a href="content2.html"><img src="img/button3.png" width="100px" height="100px" class="bottonn"></a></div>
+<div id="maincontainer2">
+<div id="maincontentstitle">活用方法</div>
+<div id="contents">
+<p>このページでは、マインドマップの実際の活用法について説明していきます。</p>
+<p>マインドマップは、とても便利な思考ツールであり、様々な活用方法が有ります。</p>
+<p>このページでは、</p>
+<p>　　<b>・講義内容のメモ</b></p>
+<p>　　<b>・会議で出た意見のまとめ</b></p>
+<p>においての、マインドマップの活用例を示します。</p>
+<h2>講義内容のメモ</h2> 
+<p>学生のみなさんは、講義の内容をメモする際、どのようにメモを取っているでしょうか？大半の方は、先生や教授が黒板やホワイトボードに書いたことをそのまま写しているのではないでしょうか。しかし、そのノートを講義が終わってから見直したときに、このようなことを思ったことはないでしょうか？</p>
+<p>　　<b>・講義後、ノートを見直したけど、講義内容が頭に入りにくい…</b></p>
+<p>　　<b>・(数学などで)どの公式がどういったときに使えるかが分からない…</b></p>
+<p>　　<b>・(社会などで)どの出来事がどの出来事と関連しているかが分からない…</b></p>
+<p>おそらく、このように思うことは少なくないと思います。実際、私もそのまま板書をノートに写してしまった際上記に示したようなことを思うことが多々あります。</p>
+<p>　　<b>しかし！</b></p>
+<p>マインドマップを使用してノートを取ると、これらの悩みを解消することができます。例として、マインドマップで世界史の講義のメモを取ったものを以下に示します。</p>
+<div align="center"><img src="img/maind.png"></div>
+<p>マインドマップを使用して講義メモを取ると、上記のようになります。
+　　</p>
+<p>私たちが、勉強をする際にマインドマップをお勧めする理由として、<b>それぞれの単語の関係性</b>が分かるということがあります。  </p>
+<p>例えば、上図の例で考えてみると、中央に「アレクサンドロス大王」という単語が書かれています。そして、その「アレクサンドロス大王」に関係する単語が鎖のようにつながれていきます。マインドマップはこのように書いていくので、その単語が他の単語とどのような関係であるかが分かりやすいのです。だから、普通にノートを取るよりも頭に入りやすく、また、後で見返した際に分かりやすくなります 。</p>
+
+<h2>会議で出た意見のまとめ</h2> 
+<p>会社に勤務している方は、会議にはよく参加されると思います。学生のみなさんでも、例えば、学園祭や体育祭についての会議など、会議に参加されたことのある方は結構いらっしゃると思います。
+　　</p>
+<p>会議にも色々ありますが、大抵の会議では、現在自分の参加しているプロジェクトの方針や内容に対して、意見の出し合い、討論、といったようなことをするのが一般的だと思います。  </p>
+<p>そのような会議で、<b>意見や討論の内容についてまとめるのは中々大変です</b>。まとめる時間が欲しくても、会議の進行を止めることはできませんし、かといって素早くまとめようとしても、きれいにまとまりづらいものです 。</p>
+<p>　　<b>しかし！</b></p>
+<p>そんな時にもマインドマップはとても役に立ちます。マインドマップは、すでにまとめ方が決まっており、そのまとめ方にしたがい記述していけばいいので、素早く、きれいにまとめることができます。
+</p>
+<p>このように、マインドマップは様々なことに使用することができます。みなさんもマインドマップ、使用してみてはいかがでしょうか？ </p>
+
+<div class="box"><div class="Abox"><img src="img/mai3.png"></div>
+<div class="Bbox">
+  <p>マインドマップは、こんなに便利だったんだね！</p>
+  <p>知らなかったよ！</p>
+</div>
+</div>
+
+</div>
+
+<div id="hed2">Copyright (C)あなたの学びが変わる！マインドマップ活用法. All Rights Reserved.</div> 
+</div>
+
+
+</body>
+</html>
