@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Your learn changes!Method of utilizing MindMap</title>
+<meta name="keywords" content="MindMap,Method of utilizing,High School student,student" />
+<meta name="description" content="This WebSite is Making lecture of MindMap for students. From how to draw basic MindMap to how to draw practical MindMap in a meeting. And the usage after drawing. Using an example, We explain the above. " />
+<link href="css/newnew.css" rel="stylesheet" type="text/css" />
+<!--iquery -->
+<script src="js/jquery-1.9.1.js"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    //body非表示
+    $("body").css("display", "none");
+    //フェードイン表示
+    $("body").fadeIn(1500);
+    //ページ移動処理
+    $("a.fade").click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1500, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+
+
+<!-- アニメーション関連-->
+
+//マウスを乗っけた時にぼんやりと半透明に
+$(function(){
+		   $(".title2,.menu").hover(function(){
+					$(this).stop(true).fadeTo("fast",0.4);},function(){$(this).fadeTo("fast",1,0);				
+										});
+		   });
+
+
+$(function(){
+		   $(".bottonn").hover(function(){$(this).stop(true).animate({width:80,height:80,top:10});},function(){$(this).animate({width:100,height:100,top:0});});
+		   });
+
+
+//開く
+$(function(){
+	$("dd").css("display","none");
+	
+	$("dl dt").click(function(){
+		if($("+dd",this).css("display")=="none"){
+			$("dd").slideUp("slow");
+			$("+dd",this).slideDown("slow");
+			$("dt.selected").removeClass("selected");
+			$(this).addClass("selected");
+		}
+	}).mouseover(function(){
+		$(this).addClass("over");
+	}).mouseout(function(){
+		$(this).removeClass("over");
+	});
+});
+
+</script>
+
+</head>
+
+<body>
+<div id="null"></div>
+<div id="sotoBotton"><a href="index1.html"><img src="img/botton.png" width="100px" height="100px" class="bottonn"></a><a href="content4En.html"><img src="img/botton2.png" width="100px" height="100px" class="bottonn"></a><a href="content2En.html"><img src="img/button3.png" width="100px" height="100px" class="bottonn"></a>
+
+
+
+</div>
+<div id="maincontainer2">
+
+<div id="pantitle">
+<div class="panname"><div id="pannull"></div><a href="index1.html">Top</a></div>
+<div class="panbox"><div class="pan2"></div><div class="pan3"></div></div>
+<div class="panname"><a href="content3En.html">Usage of MindMap</a></div>
+</div>
+
+
+<div id="maincontentstitle">Usage of MindMap</div>
+<div id="contents">
+<p>This page explains the actual method of utilizing MindMap.<br />
+  MindMap is a very convenient thought  tool, and there are various utilization methods. In this page, I show the  example which utilized MindMap in the following cases.</p>
+<p>　　<b>・<strong>Memo of lecture contents</strong></b></p>
+<p>　　<b>・</b><strong>Summary of the opinion that appeared by the talks in the group</strong></p>
+<p>　　<b>・<strong>Creating a Schedule</strong></b></p>
+
+<p>In addition, I introduce a<b> failure example and an improvement way </b> on making MindMap.</p>
+
+<h2>Memo of lecture contents</h2> 
+<dl >
+<dt >Let’s summarize the information on the board</dt>
+<dd style="height:680px;" >
+  
+  <p style="margin:20px 0 20px 0;"  >
+  Let’s think about a method to summarize the information about "<b>the rule of Shogun Yoshimune TOKUGAWA</b>" to be written on a lower blackboard in as mind map.By the real class, the teacher does not draw mind map on the blackboard.So I think that this exercise is effective.
+</p>
+  <div id="kokuban" >
+  <p>◎Kyoho Reforms and Change of Society</p>
+  <p style="margin-left:1em;"> <font color="yellow">Yoshimune Tokugawa</font>→8th Shogun of Tokugawa Shogunate</p>
+  <p style="margin-left:2em;">・Kyoho Reforms</p>
+  <p style="margin-left:3em;">Shotage of Rice →　<u>Financial Difficulties</u></p>
+  <p style="margin-left:2em;">The year 1716　 <font color="yellow">“Kyoho Reforms”</font></p>
+  <p style="margin-left:4em;"><u>Financial Reconstruction Policy</u></p>
+  <p style="margin-left:3em;">1. <font color="yellow">Thriftiness of Matter</font></p>
+  <p style="margin-left:3em;">2. <font color="yellow">Agemai System</font>→Let them present rice</p>
+  <p style="margin-left:6em;">Reduce Daimyo's Alternate-Year Residence</p>
+  <p style="margin-left:3em;">3. <font color="yellow"> Development of new field </font></p>
+  <p style="margin-left:3em;">4. <font color="yellow">Kujigata Osadamegaki</font>→Standard of the trial</p>
+  <p style="margin-left:2em;">→ Increase in income</p>
+  <p style="margin-left:1em;">・ Spread of Monetary Economy</p>
+  <p style="margin-left:2em;">A monetary economy got wide to farmers</p>
+  <p style="margin-left:3em;">→Commercial crop   (ex.Cotton)</u></p>
+  <p style="margin-left:1em;">・Riot</p>
+  <p style="margin-left:4em;">18c　1．<font color="yellow"> Farmer Riot</font></p>
+  <p style="margin-left:8em;">・Solidarity of the villager→Reduction of the tribute</p>
+   <p style="margin-left:25em;">→ Change of the local administrator</p>
+  <p style="margin-left:6.5em;">2.  <font color="yellow">Destructive riots</font>→performed for a merchant of the rice</p>
+  </div>
+   <p style="margin:20px 0 20px 0;"  >
+ Well, then I will <a href="content2En.html">draw MindMap</a> in order of just what I explained it 
+</p>
+
+ </dd>
+ <dt >Draw ｃentral theme</dt>
+<dd style="height:370px;">
+<p  style="margin:20px 0 20px 0;">At first write a theme in the center. <b>“Yoshimune Tokugawa" will be suitable for the central theme</b> because the blackboard says about he rule of Shogun Yoshimune TOKUGAWA.
+In this way, I drew the picture of a castle associated with a general. If you drew any picture, you will be able to open a drawer in memory easily when you read mind map again.
+</p>
+ <div align="center" style="margin:20px;"><img src="img/siroen.png" width="248" height="241" 　alt="城,MindMap"/></div> 
+</dd> 
+
+<dt >Divide it into a category and lengthen a branch</dt>
+<dd style="height:390px;">
+<p  style="margin:20px 0 20px 0;">Generally speaking, the next step is write what you can associate with a central theme. However, <b>I classify what is written on the blackboard in some categories</b> because I convert what is written on the blackboard into mind map this time.
+</p>
+ <div align="center" style="margin:20px;"><img src="img/siroen2.png" width="271" height="247" 　alt="城,MindMap"/></div> 
+</dd> 
+ 
+ <dt >Lengthen a branch every category</dt>
+<dd style="height:540px;">
+<p  style="margin:20px 0 20px 0;">Finally mind map is completion if you lengthen a branch every category and copy contents from the blackboard. In this way, if you write contents of board using Mindmap, <b>It is easier to view than writing contents of board in a notebook</b> because the contents of board divited some group.
+</p>
+ <div align="center" style="margin:20px;"><img src="img/siroen3.jpg"　alt="城,MindMap"/></div> 
+</dd> 
+ 
+ 
+</dl>
+
+<h2>Summary of the opinion that appeared by the talks in the group</h2> 
+
+<dl>
+ <dt >Let's summarize the opinion</dt>
+<dd style="height:900px;">
+<p  style="margin:20px 0 0px 0;">
+Have you ever participated in any activity in the school? For example, I think the people belonging to a student council or executive committee at school festival or the athletic meet have ever participated in the meeting about those policies. In addition, I think that even if you does not belong to a student council or the executive committee, you have experienced what you summarize each opinion by group learning. 
+</p>
+<p>
+In such a case it is very hard to summarize the opinion of all the members properly. Even if you want time to summarize opinion, you cannot stop the talks. And even if you summarize opinion quickly, you miss an opinion or become hard to understand it when you review later.
+</p>
+<p style="margin:20px 0 20px 0;"><b>However！</b></p>
+<p>The Mindmap is very useful in such a case. I show the example which I summarized below the talks in the group by Mindmap .</p>
+ <div align="center" style="margin:20px 0 20px 0;"><img src="img/yoteien.jpg"　alt="日本紹介,マインドマップ"/></div>
+  <p>As shown in the figure, When settle the talks in the group, write the matter a key role of the topic midmost (a figure "Japanese"). And you connect it like a chain and draw the opinion that came out according to how to draw Mindmap. Like a figure, As shown, I can easily group it according to a meaning. Thus, it becomes easy to look when I confirmed it later.</p>
+</dd> 
+</dl>
+
+
+<h2>Creating a schedule</h2> 
+ <dl>
+ <dt >Let's create a Schedule</dt>
+<dd style="height:890px;">
+<p  style="margin:20px 0 0px 0;">
+How will a student participating in club activities or learning make a schedule? Recently students can manage a schedule with smartphones. Does everybody compile a plan by such a method, too? Or there may be the person who has never made a schedule.
+</p>
+<p>
+<b>Actually, the Mindmap is effective when you make schedule.</b>If you write the schedules commonly, quantity increases and it becomes hard to understand and it may become hard to watch it. But, you can compile various plans with several pieces of paper neatly and are able to remember planned contents definitely if you make a schedule with Mindmap. Example which I planned a schedule with Mindmap is shown below.
+ <div align="center" style="margin:20px 0 20px 0;"><img src="img/yotei.jpg"　alt="予定,マインドマップ"/></div>
+ <p>When you draw a schedule in Mindmap, at first you draw it midmost to show it in the figure whether it is what time of schedule or what kind of schedule (in the figure, I write it about a plan of the second week of December). And you connect the schedule about the theme like a chain form from the center and draw it (in the figure, I write about the schedule of the Monday through Friday). I can compile the schedule of the week and the month with a piece of paper by drawing in this way, and it becomes easy to look again it. 
+</p>
+<p>In this way, we can use the Mindmap for various things. Would you like to use Mindmap?</p>
+</dd> 
+</dl>
+
+
+<h2>A failure example and improvement example</h2> 
+ <dl>
+ <dt >Mistake that beginners do well</dt>
+<dd style="height:1190px;">
+<p  style="margin:20px 0 0px 0;">
+I think that to see a page of how to describe Mindmap, there are the person who made it myself at once and the person who wants to make it. However, you cannot make use of a characteristic of the mind map or can mistake the style itself when actually you make it by oneself. 
+</p>
+<p>
+Therefore, in this page, I give a failure example of the Mindmap and give a method to improve a failure example. At first I show the first failure example in the following figures.</p>
+ <div align="center" style="margin:20px 0 20px 0;"><img src="img/sekibunen.jpg"　alt="数学,積分,マインドマップ"/></div>
+ <div align="center" style="margin:0px 0 20px 0;">（This is the mind map which I gathered up about integral calculus to learn in high school students.）</div>
+ <p>By the way, I showed the first failure example. Will you know where is wrong? Probably I think that the person watching finished Mindmap in other pages feels odd in this Mindmap.
+At first there is a point<b> not to use the color</b> for one of the reasons why the Mindmap of the upper figure fails. It is necessary for the Mindmap to give an vivid impression using basically various colors. Otherwise an impression of the Mindmap becomes little and it is not effective when you memorize.</p>
+<p>As the error reason of the second, there is a point <b>not to be used the image in a central theme and not to be used the image as a whole</b>. As well as the first reason, because an impression becomes little, it becomes hard to memorize contents of the Mindmap. Therefore you had better draw the Mindmap using a lot of images. Rather you may draw it using a lot of images too much for you. It is important for Mindmap very much to use a lot of images.</p>
+
+<p>As the error reason of the third, there is the point <b>that a word and an expression are written in circle and circle connected circle by line</b>. A sentence which you want to memorize and the expression are basically written above a line. When you use the figure as emphasis of the images, it is necessary to write a figure so that the content is clearer and emphasized. When you use circle of the same size for all matters like the Mindmap of the upper figure, it is not emphasized.</p>
+<p>As the error reason of the fourth, there is <b>the point that there are few blanks between each element</b>. Because each word is written without a space in the upper figure, it becomes hard to watch it a little. This is disturbance when you memorize things. Therefore it is necessary to improve Mindmap to be a space between element and element.</p>
+<p>The error reason of the fifth is the point that <b> central line is thin or same as other lines</b>. It is necessary that the line is drawn on the center as big as possible to emphasize that things drawn the center is main and important.</p>
+<p>There is just so much else points that should be improved. However, I think these five points should be improved with priority. I think that these five points of failure is the mistakes that they do well when they draw it for the first time. However, it is very important five points in drawing Mindmap. So please be  improved  if you find such a mistake.</p>
+</dd>
+
+
+ <dt >Even if you look right…</dt>
+<dd style="height:700px;">
+<p  style="margin:20px 0 0px 0;">Next, the second examples of wrong will be shown below.</p>
+ <div align="center" style="margin:20px 0 20px 0;"><img src="img/tadasien.jpg" width="655" height="413"　alt="失敗例,マインドマップ"/></div>
+
+<p  style="margin:20px 0 0px 0;">Well, do you know where of this figure is wrong?</p>
+<p>Seemingly I employ a lot of images and seem to be right in the Mindmap which overcame the most of the first failure example. However, I am worried about a certain thing. That means that <b>there is little number of words associated with one word</b>. For example, the word "temperature" is only associated with the word "fine weather".
+In addition, only the word "(Temperature) rises" is associated with the word "temperature".
+
+</p>
+<p>
+In the Mindmap, you should associate many words. Because you leads to the improvement of a memory and the creativity,  should draw the associated words as much as possible. For example, you can associate the words such as "reason" and "the feeling" with the word "fine weather" as well as the word "temperature". So you should connect those words into a  chain form from the word "temperature".</p>
+
+ 
+</dd> 
+
+ 
+</dl>
+
+
+</div>
+
+<div id="hed2">Copyright (C)Your learn changes!Method of utilizing MindMap. All Rights Reserved.</div> 
+</div>
+
+
+</body>
+</html>

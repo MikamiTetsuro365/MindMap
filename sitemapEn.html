@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Your learn changes!Method of utilizing MindMap</title>
+<meta name="keywords" content="MindMap,Method of utilizing,High School student,student"/>
+<meta name="description" content="This WebSite is Making lecture of MindMap for students. From how to draw basic MindMap to how to draw practical MindMap in a meeting. And the usage after drawing. Using an example, We explain the above. " />
+<link href="css/newnew.css" rel="stylesheet" type="text/css" />
+<!--iquery -->
+<script src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    //body非表示
+    $("body").css("display", "none");
+    //フェードイン表示
+    $("body").fadeIn(1500);
+    //ページ移動処理
+    $("a.fade").click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1500, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+
+
+<!-- アニメーション関連-->
+
+//マウスを乗っけた時にぼんやりと半透明に
+$(function(){
+		   $(".title2,.menu").hover(function(){
+					$(this).stop(true).fadeTo("fast",0.4);},function(){$(this).fadeTo("fast",1,0);				
+										});
+		   });
+//ボタン関連
+$(function(){
+		   $(".bottonn").hover(function(){$(this).stop(true).animate({width:80,height:80,top:10});},function(){$(this).animate({width:100,height:100,top:0});});
+		   });
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+<div id="null"></div>
+<div id="sotoBotton"><a href="index1.html"><img src="img/botton.png" width="100px" height="100px" class="bottonn"></a>
+
+
+
+</div>
+<div id="maincontainer2">
+
+<div id="pantitle">
+<div class="panname"><div id="pannull"></div><a href="index1.html">Top</a></div>
+<div class="panbox"><div class="pan2"></div><div class="pan3"></div></div>
+<div class="panname"><a href="sitemapEn.html">SiteMap</a></div>
+</div>
+
+
+<div id="maincontentstitle">SiteMap</div>
+<div id="contents">
+
+<h2>MainContent</h2> 
+<li><a href="content1.html"　　　　　　　　>What is MindMap?</a></li>
+<li><a href="content2.html"　　　　　　　　>Drawing of MindMap</a></li>
+<li><a href="content3.html"　　　　　　　　>Usage of MindMap</a></li>
+
+<h2>OthersContent</h2> 
+<li><a href="index1.html">TopPage</a></li>
+<li><a href="index.html">Japanese(JapanesePage)</a></li>
+<li><a href="about.html"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　>About</a></li>
+<li><a href="sitemap.html"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　>SiteMap</a></li>
+<li><a href="content4.html">Reference</a></li>
+</div>
+
+<div id="hed2">Copyright (C) <script language="javascript">document.write(new Date().getFullYear())</script>
+  Your learn changes!Method of utilizing MindMap. All Rights Reserved.</div> 
+</div>
+
+
+</body>
+</html>

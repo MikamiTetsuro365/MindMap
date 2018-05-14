@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>あなたの学びが変わる！マインドマップ活用法</title>
+<meta name="keywords" content="マインドマップ,勉強法,高校生,学生" />
+<meta name="description" content="本サイトは学生向けのマインドマップの作成講座です。基本的なマインドマップの描き方から、会議などの集団でアイデアを出しあうときなどの応用的なマインドマップの作り方、そして、作成後の活用方法まで例を交えて解説しています。" />
+<link href="css/newnew.css" rel="stylesheet" type="text/css" />
+<!--iquery -->
+<script src="js/jquery-1.9.1.js"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    //body非表示
+    $("body").css("display", "none");
+    //フェードイン表示
+    $("body").fadeIn(1500);
+    //ページ移動処理
+    $("a.fade").click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1500, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+
+
+<!-- アニメーション関連-->
+
+//マウスを乗っけた時にぼんやりと半透明に
+$(function(){
+		   $(".title2,.menu").hover(function(){
+					$(this).stop(true).fadeTo("fast",0.4);},function(){$(this).fadeTo("fast",1,0);				
+										});
+		   });
+
+
+$(function(){
+		   $(".bottonn").hover(function(){$(this).stop(true).animate({width:80,height:80,top:10});},function(){$(this).animate({width:100,height:100,top:0});});
+		   });
+
+
+//開く
+$(function(){
+	$("dd").css("display","none");
+	
+	$("dl dt").click(function(){
+		if($("+dd",this).css("display")=="none"){
+			$("dd").slideUp("slow");
+			$("+dd",this).slideDown("slow");
+			$("dt.selected").removeClass("selected");
+			$(this).addClass("selected");
+		}
+	}).mouseover(function(){
+		$(this).addClass("over");
+	}).mouseout(function(){
+		$(this).removeClass("over");
+	});
+});
+
+
+
+</script>
+
+</head>
+
+<body>
+<div id="null"></div>
+<div id="sotoBotton"><a href="index.html"><img src="img/botton.png" width="100px" height="100px" class="bottonn"></a><a href="content4.html"><img src="img/botton2.png" width="100px" height="100px" class="bottonn"></a><a href="content2.html"><img src="img/button3.png" width="100px" height="100px" class="bottonn"></a>
+
+
+
+</div>
+<div id="maincontainer2">
+
+<div id="pantitle">
+<div class="panname"><div id="pannull"></div><a href="index.html">Top</a></div>
+<div class="panbox"><div class="pan2"></div><div class="pan3"></div></div>
+<div class="panname"><a href="content3.html">活用方法</a></div>
+</div>
+
+<div id="maincontentstitle">活用方法</div>
+<div id="contents">
+<p>このページでは、マインドマップの実際の活用法について説明していきます。</p>
+<p>マインドマップは、とても便利な思考ツールであり、様々な活用方法が有ります。</p>
+<p>このページでは、</p>
+<p>　　<b>・講義内容のメモ</b></p>
+<p>　　<b>・グループでの話し合いで出た意見のまとめ</b></p>
+<p>　　<b>・予定表の作成</b></p>
+<p>においての、マインドマップの活用例を示します。</p>
+<p>また、マインドマップを作成するうえでの<b>失敗例と改善例</b>を紹介します。</p>
+<h2>講義内容のメモ</h2> 
+
+<dl >
+<dt >黒板の情報をまとめよう</dt>
+<dd style="height:640px;" >
+  
+  <p style="margin:20px 0 20px 0;"  >
+  ここでは応用編として、下の黒板に書いてある「<b>徳川吉宗の時代</b>」に関する情報をマインドマップとしてまとめる方法を考えてみましょう。
+実際の授業では先生は黒板にマインドマップは描いてくれないので、この練習は効果があると思います。
+</p>
+  <div id="kokuban" >
+  <p>◎享保の改革と社会変化</p>
+  <p style="margin-left:1em;"> <font color="yellow">徳川吉宗</font>→江戸幕府・第 <font color="yellow">8</font>代将軍</p>
+  <p style="margin-left:2em;">・享保の改革</p>
+  <p style="margin-left:3em;">米の不足　→　<u>財政難</u></p>
+  <p style="margin-left:2em;">1716年　 <font color="yellow">享保の改革</font></p>
+  <p style="margin-left:4em;"><u>財政の立て直し政策</u></p>
+  <p style="margin-left:3em;">1. <font color="yellow">質素・倹約</font></p>
+  <p style="margin-left:3em;">2. <font color="yellow">上米の制</font>→「米を献上せよ!!」</p>
+  <p style="margin-left:6em;">参勤交代を減らした</p>
+  <p style="margin-left:3em;">3. <font color="yellow"> 新田開発</font></p>
+  <p style="margin-left:3em;">4. <font color="yellow">公事方御定書</font>→裁判の基準</p>
+  <p style="margin-left:2em;">→収入の増加</p>
+  <p style="margin-left:1em;">・ <font color="yellow">貨幣経済</font>の広がり</p>
+  <p style="margin-left:2em;">農民に貨幣経済が広がった</p>
+  <p style="margin-left:3em;">→綿などの<u>商品作物</u></p>
+  <p style="margin-left:1em;">・一揆</p>
+  <p style="margin-left:2em;">18世紀： 1.<font color="yellow"> 百姓一揆</font></p>
+  <p style="margin-left:8em;">・村人の団結→年貢の軽減→代官の交代</p>
+  <p style="margin-left:6.5em;">2.  <font color="yellow">打ちこわし</font>→米の商人に対して</p>
+  </div>
+  <p style="margin:20px 0 20px 0;"  >
+ さて、それでは<a href="content2.html">マインドマップの描き方</a>のページで説明した通りの順番でマインドマップを描いていきましょう。
+</p>
+
+ </dd>
+ <dt >中心にテーマを描く!</dt>
+<dd style="height:370px;">
+<p  style="margin:20px 0 20px 0;">まずは、中心にテーマを書きましょう。今回、黒板は徳川吉宗の時代について書いてあるので、<b>中心のテーマは「徳川吉宗」あたりが適当でしょう</b>。このような感じで、将軍にちなんで城の絵も描いてみました。マイマプ君も言っていましたが、何かしら絵を描くとあとで読み返すとき、「ああ、あの城の絵のマインドマップか」というように記憶の引き出しを簡単に開けることができると思います。
+</p>
+ <div align="center" style="margin:20px;"><img src="img/siro.png" width="248" height="241" 　alt="城,マインドマップ"/></div> 
+</dd> 
+
+<dt >カテゴリに分けて枝を伸ばす</dt>
+<dd style="height:350px;">
+<p  style="margin:20px 0 20px 0;">つぎに、普通は中心テーマから連想できることを書くのですが、今回は黒板からマインドマップにするので、<b>黒板に書いてあることをいくつかのカテゴリに分類します</b>。
+</p>
+ <div align="center" style="margin:20px;"><img src="img/siro2.png" width="271" height="247" 　alt="城,マインドマップ"/></div> 
+</dd> 
+ 
+ <dt >カテゴリごとに枝を伸ばす</dt>
+<dd style="height:520px;">
+<p  style="margin:20px 0 20px 0;">最後に、カテゴリごとに枝を伸ばして内容を写していけば完成です。このように、マインドマップを使って板書の内容を書くと、そのまま板書の内容をノートに写すよりも、<b>グループに分けられて見やすくなります</b>！
+</p>
+ <div align="center" style="margin:20px;"><img src="img/siro3.jpg"　alt="城,マインドマップ"/></div> 
+ 
+</dd> 
+ 
+ 
+</dl>
+
+<h2>グループでの話し合いで出た意見のまとめ</h2> 
+<dl>
+ <dt >意見をまとめよう</dt>
+<dd style="height:900px;">
+<p  style="margin:20px 0 0px 0;">
+学生のみなさんは、何か学内での活動に参加したことはないでしょうか。例えば、生徒会や学園祭、体育祭の実行委員に所属している方々は、それらの方針についての会議に参加されたことがあると思います。また、生徒会や実行委員会に入っていない方でも、例えば、グループ学習などでそれぞれの意見を出し合いまとめていくことは、経験したことがあると思います。
+</p>
+<p>
+そのような場合に、<b>全員分の意見をきれいにまとめることはとても大変なことです。</b>まとめる時間が欲しくても、話し合いの進行を止めることはできませんし、かといって早くまとめようとすると、意見をとりこぼしてしまったり、後で見返した際に分かりづらくなってしまったりします。
+</p>
+<p style="margin:20px 0 20px 0;"><b>しかし！</b></p>
+<p>そんな時にもマインドマップはとても役に立ちます。以下に、グループでの話し合いをマインドマップでまとめた例を示します。</p>
+ <div align="center" style="margin:20px 0 20px 0;"><img src="img/syokaii.jpg"　alt="日本紹介,マインドマップ"/></div>
+  <p>図に示すように、グループでの話し合いをまとめるときは、真ん中にその話題の中心となる事柄を書きます（図では、「日本」）。そして、出てきた意見をマインドマップの描き方に従って、鎖のようにつなげて書いていきます。こうすることで、図のように、意味上のグループで簡単に分けていく事ができ、後で見返した際に分かりやすくなるのです。</p>
+</dd> 
+ 
+ 
+</dl>
+
+<h2>予定表の作成</h2> 
+ <dl>
+ <dt >予定表を作成しよう</dt>
+<dd style="height:870px;">
+<p  style="margin:20px 0 0px 0;">
+習い事をしていたり、部活動に参加していたりする学生さんは予定表の作成をどのように行っているでしょうか。最近では、スマートフォンなどを使ってスケジュールの管理を行うこともあるようで、みなさんもそのような方法で予定をまとめているのではないでしょうか。あるいは、予定表を作ったことのない人もいるかもしれませんね。
+</p>
+<p>
+<b>実は、この予定表を作る際にもマインドマップは効果的です。</b>予定表を普通に書いてしまうと量が多くなり、分かりづらくなったり、見にくくなったりしてしまうことがあります。しかし、マインドマップで予定表を作ると、さまざまな予定を数枚の紙にきれいにまとめることができ、また、予定の内容を明確に覚えておくことができるようになります。マインドマップで予定表を作った例を示します。 
+ <div align="center" style="margin:20px 0 20px 0;"><img src="img/yotei.jpg"　alt="予定,マインドマップ"/></div>
+ <p>マインドマップで予定表を描く際には、まず、図に示すように、いつの予定、または、どんな予定であるかを真ん中に描きます（図では、12月の第2週目の予定について書いている）。そして、そのテーマに関する予定を、中心から鎖状につなげて描いていきます（図では、月曜日～金曜日の予定について書いている）。こうして描くことによって、その週や月の予定を1枚の紙にまとめることができ、後で見返しやすくなるのです。
+このように、マインドマップは様々なことに使用することができます。みなさんもマインドマップ、使用してみてはいかがでしょうか？
+
+</p>
+</dd> 
+</dl>
+
+<h2>失敗例と改善方法</h2> 
+ <dl>
+ <dt >初心者にありがちな間違え</dt>
+<dd style="height:1170px;">
+<p  style="margin:20px 0 0px 0;">
+マインドマップの描き方のページを見て、早速自分でも作ってみた人や、作ってみたいと思った人がいることだろうと思います。しかし、自分で実際に作ってみると、マインドマップの特徴を生かせていない、あるいは、体裁そのものが間違っていることがよくあります。
+</p>
+<p>
+そこで、このページでは、マインドマップの失敗例を挙げて、その失敗例を改善するための方法を挙げていこうと思います。まず、1つ目の失敗例を以下の図に示します。 </p>
+ <div align="center" style="margin:20px 0 20px 0;"><img src="img/sekibun.jpg"　alt="数学,積分,マインドマップ"/></div>
+ <div align="center" style="margin:0px 0 20px 0;">（これは、高校生で習う積分についてまとめたマインドマップです）</div>
+ <p>さて、1つ目の失敗例を示しましたが、どこが間違っているか分かるでしょうか。多分、他のページで完成したマインドマップを見ている方は、このマインドマップに違和感を覚えると思います。
+まず、上の図のマインドマップが失敗している理由の1つに、<b>色を使っていないという点</b>があります。マインドマップは基本的に様々な色を使い、生き生きとした印象を与える必要があります。そうしなければ、マインドマップに対する印象が薄くなってしまい、物事を記憶する際に、効率的ではなくなってしまいます。</p>
+<p>失敗している理由の2つ目に、<b>中心のテーマにイメージ（絵）がない、全体的にイメージをあまり使っていないという点</b>があります。これも、上記の理由と同じで、印象が薄くなってしまい、マインドマップの内容を記憶しにくくなってしまうからです。だから、なるべくイメージはたくさん使って描いた方がいいです。むしろ、自分では多すぎると思うくらい描いてみてもいいかもしれません。イメージを置くということは、マインドマップではそれだけ重要な意味を持ちます。</p>
+
+<p>失敗している理由の3つ目に、<b>単語や式を円の中に描き、円と円とを線で結んで構成しているという点</b>があります。基本的に、暗記する事項を示した文や式は、線上に書いていきます。円などの図形を使い、その中に文や式を書き込み、線で結んでいく方法は、原則的にいけません。イメージの強調として使う際は、より明確に、そしてその内容が強調されるように書く必要があります。上図のマインドマップように、全ての事柄に対し円を用いる場合は、強調になっていません。</p>
+<p>失敗している理由の4つ目に、<b>スペースが狭い、それぞれの要素の間隔の余白が少ないという点</b>があります。上の図では、単語同士がほとんど余白がない状態で書かれているため、少々見づらくないっています。これも、記憶する際の印象の妨げになってしまうので、空間に余裕がでるように直す必要があります。</p>
+<p>失敗している理由の5つ目に、<b>中央ラインが細い、他の線と同じ大きさであるという点</b>があります。中央に描かれる物事が中心の物事で、かつ重要な物事であるということを強調するために、中央から引かれる線は、なるべく太くする必要があります。</p>
+<p>他にも応用的なことをいえばまだまだありますが、優先的に直すべき点はこの5点だと思います。この5点の失敗は、初めて描く際によくやってしまう間違いだと思います。しかし、マインドマップを描く上で、とても重要な5点なので、ぜひこのような失敗を見つけたら改善してください。</p>
+</dd>
+
+
+ <dt >正しく見えても…</dt>
+<dd style="height:680px;">
+<p  style="margin:20px 0 0px 0;">次に、2つ目の失敗例を以下に示します。</p>
+ <div align="center" style="margin:20px 0 20px 0;"><img src="img/tadasiku.jpg" width="655" height="413"　alt="失敗例,マインドマップ"/></div>
+
+<p  style="margin:20px 0 0px 0;">さて、この図のどこが失敗か分かるでしょうか。</p>
+<p>一見、イメージをたくさん使っており、1つ目の失敗例のほとんどを克服したマインドマップで、正しいようにも見えますが、ある一点が気になります。それは、<b>1つの単語から連想される言葉の数が少ないという点</b>です。例えば、「晴れ」という言葉からは「気温」という言葉しか連想されておらず、また、その「気温」という言葉からも「上がる」という言葉しか連想されていません。
+</p>
+<p>
+マインドマップでは、多くの言葉を連想させた方が、記憶力や創造力の向上につながるので、連想される言葉はできるだけ多く描いた方がいいのです。例えば、「晴れ」という言葉からは、「気温」という言葉以外にも、「原因」や「気持ち」といった言葉が連想されるので、それらの言葉も「気温」という言葉から鎖状につなげたほうがいいのです。</p>
+
+ 
+</dd> 
+
+ 
+</dl>
+
+
+</div>
+
+<div id="hed2">Copyright (C)あなたの学びが変わる！マインドマップ活用法. All Rights Reserved.</div> 
+</div>
+
+
+</body>
+</html>

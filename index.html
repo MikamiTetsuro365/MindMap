@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>あなたの学びが変わる！マインドマップ勉強法</title>
+<meta name="keywords" content="マインドマップ,勉強法,高校生,学生" />
+<meta name="description" content="本サイトは学生向けのマインドマップの作成講座です。基本的なマインドマップの描き方から、会議などの集団でアイデアを出しあうときなどの応用的なマインドマップの作り方、そして、作成後の活用方法まで例を交えて解説しています。" />
+<link href="css/newnew.css" rel="stylesheet" type="text/css" />
+
+<!--iquery -->
+<script src="js/jquery-1.9.1.js"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    //body非表示
+    $("body").css("display", "none");
+    //フェードイン表示
+    $("body").fadeIn(1500);
+    //ページ移動処理
+    $("a.fade").click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1500, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+
+
+
+<!-- アニメーション関連-->
+
+//マウスを乗っけた時にぼんやりと半透明に
+$(function(){
+		   $(".title2,.menu").hover(function(){
+					$(this).stop(true).fadeTo("fast",0.4);},function(){$(this).fadeTo("fast",1,0);				
+										});
+		   });
+
+
+
+
+
+</script>
+
+
+<!--更新のスクロールバー関連 -->
+<script type="text/javascript">
+
+
+$(function(){
+
+
+	 $('#kousinconte').jScrollPane({showArrows:true, scrollbarWidth: 15, arrowSize: 15});
+
+});
+
+
+</script>
+
+
+
+</head>
+
+<body id="main">
+<div id="null"></div>
+<div id="maincontainer">
+<div class="hed2">  <div><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.1/jp/"><img src="http://i.creativecommons.org/l/by-nc-nd/2.1/jp/88x31.png" alt="クリエイティブ・コモンズ・ライセンス" width="51" height="16" style="border-width:0" /></a>
+    この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.1/jp/">クリエイティブ・コモンズ 表示 - 非営利 - 改変禁止 2.1 日本 ライセンスの下に提供されています。</a></div></div>
+<div>
+<div class="menu"><a href="index1.html" ><img src="new/english.jpg"　alt="マインドマップ"></a></div>
+<div class="menu"><a href="about.html"><img src="new/about2.jpg"　alt="マインドマップ"></a></div>
+<div class="menu"><a href="sitemap.html"  ><img src="new/site.jpg"　alt="マインドマップ"></a></div>
+</div>
+<div id="leftcontainer">
+<div id="title">
+ <img src="new/title.jpg" alt="あなたの学びが変わる！マインドマップ活用法">
+</div>
+<div id="kousin" >
+ <div id="kousintitle" ><img src="new/osirase.jpg" alt="あなたの学びが変わる！マインドマップ活用法からのお知らせ"></div>
+ <div id="kousinconte" >
+  <div id="kousincontener" ><!--更新内容欄 -->
+        <p>2014/4/17 <br> 
+    コンテスト用サーバより削除されたので,</br>
+    一般公開します.<br />
+    </p>
+       <p>2013/12/31 <br> 
+    残念ながらファイナリストには選ばれませんでした。</br></p>
+      <p>2013/12/20 <br> 
+    セミファイナリストに選ばれました。</br></p>
+      <p>2013/11/21 <br> 
+    ホームページ完成</br></p>
+      <p>2013/11/19 <br> 
+    80％完成しました</br></p>
+     <p>2013/10/31 <br> 
+    試験的にホームページを開設しました</br></p>
+   
+     
+  </div>
+ </div>
+
+</div>
+
+
+</div>
+
+<div id="title2box">
+<div class="title2"><a href="content1.html"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ><img src="new/wat.jpg" alt="マインドマップとは"></a></div>
+<div class="title2"><a href="content2.html"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ><img src="new/kakikata.jpg"  alt="マインドマップの描き方"></a></div>
+<div class="title2"><a href="content3.html"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　><img src="new/katu.jpg" alt="マインドマップの活用"></a></div>
+<div class="title2"><a href="content4.html"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　><img src="new/sankou.jpg" ></a></div>
+<div class="title2"><a href="http://webcon.japias.jp/"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 TARGET="_blank"><img src="new/rink.jpg" ></a></div>
+<div class="title3"><img src="new/javaoff.jpg"  id="Javaoff" >
+<script>  document.getElementById("Javaoff").style.display = "none";</script>
+<script>  document.getElementById("Javaon").style.display = "block";</script>
+
+</div>
+</div>
+<div class="hed">
+Copyright (C) <script language="javascript">document.write(new Date().getFullYear())</script>
+  あなたの学びが変わる！マインドマップ活用法. All Rights Reserved.</div>
+</div>
+
+
+</body>
+</html>

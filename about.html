@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>あなたの学びが変わる！マインドマップ活用法</title>
+<meta name="keywords" content="マインドマップ,勉強法,高校生,学生" />
+<meta name="description" content="本サイトは学生向けのマインドマップの作成講座です。基本的なマインドマップの描き方から、会議などの集団でアイデアを出しあうときなどの応用的なマインドマップの作り方、そして、作成後の活用方法まで例を交えて解説しています。" />
+<link href="css/newnew.css" rel="stylesheet" type="text/css" />
+
+<!--iquery -->
+<script src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    //body非表示
+    $("body").css("display", "none");
+    //フェードイン表示
+    $("body").fadeIn(1500);
+    //ページ移動処理
+    $("a.fade").click(function(event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1500, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+
+
+<!-- アニメーション関連-->
+
+//マウスを乗っけた時にぼんやりと半透明に
+$(function(){
+		   $(".title2,.menu").hover(function(){
+					$(this).stop(true).fadeTo("fast",0.4);},function(){$(this).fadeTo("fast",1,0);				
+										});
+		   });
+
+//ボタン関連
+$(function(){
+		   $(".bottonn").hover(function(){$(this).stop(true).animate({width:80,height:80,top:10});},function(){$(this).animate({width:100,height:100,top:0});});
+		   });
+
+
+
+</script>
+
+</head>
+
+<body>
+<div id="null"></div>
+<div id="sotoBotton">
+<a href="index.html"><img src="img/botton.png" width="100px" height="100px" class="bottonn"></a>
+
+
+
+</div>
+
+
+<div id="maincontainer2">
+
+<div id="pantitle">
+<div class="panname"><div id="pannull"></div><a href="index.html">Top</a></div>
+<div class="panbox"><div class="pan2"></div><div class="pan3"></div></div>
+<div class="panname"><a href="about.html">About</a></div>
+</div>
+
+<div id="maincontentstitle">About</div>
+<div id="contents">
+
+<h2>本サイトについて</h2> 
+<p>本サイトはマインドマップの作成講座です。基本的なマインドマップの描き方から、会議などの集団でアイデアを出しあうときなどの応用的なマインドマップの作り方、そして、作成後の活用方法まで例を交えて解説しています。 <br />
+  　また、マインドマップを描いたことのない方にはわかりやすく、マインドマップを書き慣れている方にはさらなるレベルアップを目指せるようなWEBサイトになっています。 </p>
+<h2>本サイトのマスコットキャラクター</h2>  
+<p>本サイトでは、子どもたちに親しみを持ってマインドマップに接してもらうため、マイマプ君というキャラクターが登場します。主に、マインドマップの描き方を紹介するコンテンツで活躍します！</p> 
+<div align="center"><img src="img/face surprised.png" width="458" height="316"　alt="マインドマップ,キャラクター,マイマプ君"></div>
+<h2>お問い合わせ先</h2>   
+<p>mindmap9999☆gmail.com (☆を@にしてください)</p> 
+</div>
+
+<div id="hed2">Copyright (C) <script language="javascript">document.write(new Date().getFullYear())</script>
+  あなたの学びが変わる！マインドマップ活用法. All Rights Reserved.</div> 
+</div>
+
+
+</body>
+</html>
